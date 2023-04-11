@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
+import { Training } from '../training.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
 
-  constructor() { }
+  // public addTraining(training): {
+  //   return training;
+  // }
+
+  // constructor() { }
 }

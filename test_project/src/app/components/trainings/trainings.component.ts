@@ -28,12 +28,4 @@ export class TrainingsComponent implements OnInit{
    this.router.navigateByUrl('cart');
   }
 
-  // const routes: Routes = [
-  //    { path : 'trainings', component : TrainingsComponent},
-  //    { path : 'cart', component : CartComponent },
-  //    { path : '' , redirectTo : 'trainings', pathMatch : 'full' },
-  //    { path : '404', component : NotFoundComponent},
-  //    { path : '**', redirectTo: '/404'}
-  // ];
-
 }
