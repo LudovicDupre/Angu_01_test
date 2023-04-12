@@ -5,10 +5,21 @@ import { Training } from '../training.model';
   providedIn: 'root'
 })
 export class CartService {
+  
+  cart : Training[]= [];
+  
+  addTraining(product :Training) {
+    this.cart.push(product);
+  }
 
-  // public addTraining(training): {
-  //   return training;
-  // }
+  getCart() {
+    return this.cart;
+  }
 
-  // constructor() { }
+  clearCart() {
+    this.cart = [];
+    return this.cart;
+  }
+
+  constructor() { }
 }

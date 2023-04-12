@@ -1,1 +1,30 @@
-<p>cart-component works!</p>
+<div class="container">
+    <ng-container *ngIf="cart">
+        <table class="table table-stripped table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOM</th>
+                    <th>QUANTITE</th>
+                    <th>PRIX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngIf="cart">
+                    <td>{{training.id}}</td>
+                    <td>{{training.name}}</td>
+                    <td>{{training.quantity}}</td>
+                    <td>{{training.price}}</td>
+                    <td> <a class="btn btn-danger mb-2" style="margin-left: 60px;">Supprimer</a></td>
+                </tr>
+                <tr>
+                    <td>Total : </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="btn btn-success">Commander</a>
+    </ng-container>
+</div>

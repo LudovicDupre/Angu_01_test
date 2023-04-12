@@ -7,13 +7,17 @@ import { TrainingsComponent } from './components/trainings/trainings.component';
 import { FormsModule } from '@angular/forms';
 import { CartComponentComponent } from './components/cart-component/cart-component.component';
 import { NotFoundComponentComponent } from './components/not-found-component/not-found-component.component';
+import { FormsComponent } from './components/forms/forms.component';
+import { CustomerComponent } from './components/customer/customer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TrainingsComponent,
     CartComponentComponent,
-    NotFoundComponentComponent
+    NotFoundComponentComponent,
+    FormsComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,

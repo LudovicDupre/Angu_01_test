@@ -13,8 +13,6 @@ export class TrainingsComponent implements OnInit{
   listTrainings : Training[] | undefined;
   constructor(private cartService : CartService, private router : Router) { }
 
-
-
   ngOnInit(): void{
     this.listTrainings = [
       {id:1,name:'Java',description:'Formation Java SE 8 sur 5 jours',price:1500,quantity:1},
@@ -24,7 +22,7 @@ export class TrainingsComponent implements OnInit{
   }
 
   onAddToCart(training:Training){
-  // this.cartService.addTraining(training);
+   this.cartService.addTraining(training);
    this.router.navigateByUrl('cart');
   }
 
