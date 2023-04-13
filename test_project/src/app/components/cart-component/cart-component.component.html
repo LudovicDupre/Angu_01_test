@@ -1,5 +1,5 @@
 <div class="container">
-    <ng-container *ngIf="cart">
+    <ng-container *ngIf="cart !== null">
         <table class="table table-stripped table-hover">
             <thead>
                 <tr>
@@ -10,11 +10,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngIf="cart">
-                    <td>{{training.id}}</td>
+                <tr *ngFor="let trainings of cart">
+                    <!-- <td>{{training.id}}</td>
                     <td>{{training.name}}</td>
                     <td>{{training.quantity}}</td>
-                    <td>{{training.price}}</td>
+                    <td>{{training.price}}</td> -->
                     <td> <a class="btn btn-danger mb-2" style="margin-left: 60px;">Supprimer</a></td>
                 </tr>
                 <tr>
